@@ -1,29 +1,23 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import Card from './src/Card'
-import Student from './src/Student'
+import Aluno from './src/Aluno'
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Olá, mundo!</Text>
+      <Aluno nome="Silvino da Silva" nota1={6.6} nota2={7.8} faltas={16} />
+      <Text>-------------------------------</Text>
+      <Aluno nome="Orkutilson de Oliveira" nota1={6.1} nota2={8.3} faltas={22} />
       <StatusBar style="auto" />
-      <Card title="Uni-FACEF">Centro Universitário Municipal de Franca</Card>
-      <Student name="Adalberto Alves" grade1={6.5} grade2={7.3} /> 
     </View>
   );
 }
 
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#ffffff',
+    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
-  text: {
-    fontWeight: 'bold',
-    fontSize: 30
-  }
 });

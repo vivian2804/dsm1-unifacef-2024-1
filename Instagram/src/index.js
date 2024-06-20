@@ -2,6 +2,7 @@ import React from 'react'
 import { View, Image, TextInput, TouchableOpacity, Text } from 'react-native'
 import styles from './styles'
 
+
 const TelaLogin = () => {
   return (
     <View style={styles.container}>
@@ -29,7 +30,9 @@ const TelaLogin = () => {
       <TouchableOpacity>
         <Text style={styles.signupText}>Criar uma conta</Text>
       </TouchableOpacity>
-    </View>
+      <Text style={styles.footerText}>Vivian Almeida Silva</Text>
+      </View>
+    
   )
 }
 
